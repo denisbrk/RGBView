@@ -78,14 +78,23 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VXR-CR-qDC">
                                         <rect key="frame" x="112.5" y="0.0" width="230.5" height="106"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HyQ-Fw-M6K">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HyQ-Fw-M6K">
                                                 <rect key="frame" x="-2" y="0.0" width="234.5" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="K85-DL-R6o"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5gg-Ge-rWb">
                                                 <rect key="frame" x="-2" y="38" width="234.5" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hf5-j6-tJu"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NjR-Nl-5Ki">
                                                 <rect key="frame" x="-2" y="76" width="234.5" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="yu1-hb-26G"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -105,10 +114,19 @@
                             <constraint firstItem="mnr-Yh-pBJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vCf-BB-oEv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="mYa-n3-yVR" id="Zq5-vS-0GE"/>
+                        <outlet property="blueSlider" destination="NjR-Nl-5Ki" id="w3n-WD-rMw"/>
+                        <outlet property="greenLabel" destination="A6e-In-Aay" id="qZU-Vc-4qF"/>
+                        <outlet property="greenSlider" destination="5gg-Ge-rWb" id="82D-0s-oyu"/>
+                        <outlet property="redLabel" destination="bz6-ZO-4Nf" id="3pc-Ad-rwV"/>
+                        <outlet property="redSlider" destination="HyQ-Fw-M6K" id="kbW-MF-i9o"/>
+                        <outlet property="rgbView" destination="mnr-Yh-pBJ" id="Th5-Ia-g3l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1004" y="-238.83058470764618"/>
+            <point key="canvasLocation" x="-1450" y="-374"/>
         </scene>
     </scenes>
     <resources>
